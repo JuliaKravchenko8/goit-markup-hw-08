@@ -1,0 +1,21 @@
+.portfolio-card {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $primaryBackground;
+	gap: 30px;
+	column-gap: 30px;
+}
+
+.portfolio-card__item {
+	width: calc((100% - 60px) / 3);
+}
+
+.portfolio-card__link {
+	display: block;
+	text-decoration: none;
+	transition: box-shadow 250ms $timingFunction;
+
+    &:hover, &:focus {
+        box-shadow: $portfolioShadow;
+    }
+}
