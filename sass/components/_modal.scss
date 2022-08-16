@@ -17,10 +17,6 @@
 	pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.5);
-}
-
 .modal {
 	position: absolute;
 	top: 50%;
@@ -35,6 +31,10 @@
 	border-radius: 4px;
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 250ms $timingFunction;
+
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(0.5);
+	}
 }
 
 
