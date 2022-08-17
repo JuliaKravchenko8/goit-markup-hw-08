@@ -12,7 +12,6 @@
 
 .portfolio-card__link {
 	display: block;
-	text-decoration: none;
 	transition: box-shadow 250ms $timingFunction;
 
     &:hover, &:focus {
