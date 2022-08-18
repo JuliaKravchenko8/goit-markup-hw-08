@@ -1,0 +1,103 @@
+.team {
+    	background: $secondaryBackground;
+    }
+    
+    .team__title {
+    @include title;
+    }
+    
+    .person {
+    	// display: flex;
+    	// gap: 30px;
+        // @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+    
+    
+    .person__item {
+    	background-color: $primaryBackground;
+    	box-shadow: $personShadow;
+    	border-radius: 0px 0px 4px 4px;
+        margin-bottom: 30px;
+        width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
+
+        // @media screen and (min-width: 480px) {
+        //     flex-basis: calc((100% - 2 * 15px) / 1);   
+        //     margin: 15px;         
+        // }
+        // @media screen and (min-width: 768px) {
+        //     flex-basis: calc((100% - 4 * 15px) / 2);   
+        //     margin: 15px;         
+        // }
+        // @media screen and (min-width: 1200px) {
+        //     flex-basis: calc((100% - 8 * 15px) / 4);   
+        //     margin: 15px;         
+        // }
+        
+    }
+    .person__item img {
+        width: 100%;
+    }
+    
+    .person__name {
+    	margin-bottom: 10px;
+    	padding-top: 30px;
+    	color: $primaryTextColor;
+    	font-weight: 500;
+    	font-size: 16px;
+    	line-height: 1.19;
+    	text-align: center;
+    	letter-spacing: 0.03em;
+    }
+    
+    .person__description {
+    	font-family: "Roboto";
+    	font-style: normal;
+    	color: $secondaryTextColor;
+    	font-weight: 400;
+    	font-size: 16px;
+    	line-height: 1.19;
+    	text-align: center;
+    	letter-spacing: 0.03em;
+    	margin-bottom: 16px;
+    }
+    
+    .soc {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	gap: 10px;
+    	padding-bottom: 30px;
+    }
+    
+    .soc__link {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	width: 44px;
+    	height: 44px;
+    	border: none;
+    	border-radius: 50%;
+    	color: $iconColor;
+    	transition: color 250ms $timingFunction, background-color 250ms $timingFunction;
+    
+    	&:hover, &:focus {
+    		color: $whiteTextColor;
+    		background-color: $linkColor;}
+        
+    }
+    
+    .soc__icon {
+    	fill: currentColor;
+    }

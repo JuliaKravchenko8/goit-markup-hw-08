@@ -1,0 +1,47 @@
+.clients__title {
+	@include title;
+}
+
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.clients__item {
+
+}
+
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 210px;    
+
+	border: 1px solid $iconColor;
+	border-radius: 4px;
+	color: $iconColor;
+	width: 170px;
+	height: 92px;
+	transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
+
+    @media screen and (min-width: 768px) {
+        width: 226px;    
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;    
+    }
+
+}
+
+.clients__icon {
+	fill: currentColor;
+}
+
+.clients__link {
+    &:hover, &:focus {
+	border-color: $linkColor;
+	color: $linkColor;}
+}

@@ -1,31 +1,31 @@
-.clients__title {
-	@include title;
-}
+// .clients__title {
+// 	@include title;
+// }
 
-.clients__list {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
-}
+// .clients__list {
+// 	display: flex;
+// 	justify-content: center;
+// 	gap: 30px;
+// }
 
-.clients__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid $iconColor;
-	border-radius: 4px;
-	color: $iconColor;
-	width: 170px;
-	height: 92px;
-	transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
-}
+// .clients__link {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	border: 1px solid $iconColor;
+// 	border-radius: 4px;
+// 	color: $iconColor;
+// 	width: 170px;
+// 	height: 92px;
+// 	transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
+// }
 
-.clients__icon {
-	fill: currentColor;
-}
+// .clients__icon {
+// 	fill: currentColor;
+// }
 
-.clients__link {
-    &:hover, &:focus {
-	border-color: $linkColor;
-	color: $linkColor;}
-}
+// .clients__link {
+//     &:hover, &:focus {
+// 	border-color: $linkColor;
+// 	color: $linkColor;}
+// }
