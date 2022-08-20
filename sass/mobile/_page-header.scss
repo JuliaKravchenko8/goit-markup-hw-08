@@ -14,6 +14,7 @@
 .menu-container {
   // max-width: 767px;
   height: 796px;
+  width: 100%;
 
   background-color: aqua;
   padding: 48px 40px;
@@ -31,7 +32,8 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-grow: 1;
     height: 80px;
@@ -141,17 +143,16 @@
 }
 
 .address-nav {
-  margin-left: auto;
-  // gap: 50px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    // padding: 21px auto;
+    gap: 10px;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 30px;
+    // display: flex;
+    flex-direction: row;
+    gap: 50px;
   }
 }
 
@@ -163,6 +164,7 @@
     color: $linkColor;
   }
 }
+
 .address-nav__mail {
   @media screen and (max-width: 767px) {
     // order: 0;
@@ -176,13 +178,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 21px;
+    // padding-bottom: 21px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms $timingFunction;
+    color: $secondaryTextColor;
   }
 }
 
