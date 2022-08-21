@@ -1,0 +1,114 @@
+.footer {
+  margin: auto;
+  background: $darkBackground;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1600px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.footer__meta {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.footer-address {
+  //   width: 231px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $whiteTextColor;
+}
+
+.footer-address__link {
+  color: $secondaryTextColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms $timingFunction;
+
+  &--white {
+    color: $whiteTextColor;
+    transition: color 250ms $timingFunction;
+  }
+  &:hover,
+  &:focus {
+    color: $linkColor;
+  }
+}
+
+.footer-address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-soc {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer-soc__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteTextColor;
+  margin-bottom: 20px;
+}
+
+.footer-soc__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  color: $whiteTextColor;
+  background: $footerBg;
+  transition: background-color 250ms $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $linkColor;
+  }
+}
+
+.footer-soc__icon {
+  fill: currentColor;
+}
