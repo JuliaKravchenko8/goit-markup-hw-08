@@ -4,6 +4,12 @@
   max-width: 1600px;
   display: block;
   border-bottom: 1px solid $borderHeader;
+
+  @media screen and (max-width: 767px) {
+    padding: 10px 0;
+  }
+  @media screen and (max-width: 767px) {
+  }
 }
 .header__nav {
   display: flex;
@@ -12,7 +18,7 @@
 }
 
 .menu-container {
-  // max-width: 767px;
+  max-width: 767px;
   height: 796px;
   width: 100%;
 

@@ -8,7 +8,6 @@
 
 .person {
   // display: flex;
-  // gap: 30px;
   // @media screen and (min-width: 768px) {
   display: flex;
   flex-wrap: wrap;
@@ -19,13 +18,12 @@
   background-color: $primaryBackground;
   box-shadow: $personShadow;
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
-
   @media screen and (min-width: 768px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+    margin-bottom: 30px;
   }
 
   // @media screen and (min-width: 480px) {
@@ -42,7 +40,7 @@
   // }
 }
 .person__item img {
-  width: 100%;
+  width: 450px;
 }
 
 .person__name {

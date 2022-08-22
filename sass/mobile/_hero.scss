@@ -1,4 +1,8 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: 1600px;
   text-align: center;
 
@@ -23,7 +27,12 @@
   background-size: cover;
 }
 
+.hero-container {
+  width: 100vw;
+}
+
 .hero__title {
+  flex-wrap: wrap;
   margin: 0 auto 30px;
   color: $whiteTextColor;
   text-align: center;
@@ -42,7 +51,6 @@
 }
 
 .hero__button {
-  padding: 10px 32px;
   color: $whiteTextColor;
   background-color: $linkColor;
   box-shadow: $shadow;
@@ -56,6 +64,12 @@
   letter-spacing: 0.06em;
   transition: background-color 250ms $timingFunction,
     box-shadow 250ms $timingFunction;
+  @media screen and (max-width: 1199px) {
+    padding: 10px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
 
 .hero__button {
