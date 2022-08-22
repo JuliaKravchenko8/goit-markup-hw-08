@@ -1411,11 +1411,25 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
+  gap: 15px 8px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-btn {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-btn {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn__button {
@@ -1426,8 +1440,8 @@ a {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  border: none;
   text-decoration: none;
+  border-color: transparent;
   cursor: pointer;
   font-family: inherit;
   border-radius: 4px;

@@ -1,9 +1,17 @@
 .portfolio-btn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
+  gap: 15px 8px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-btn__button {
@@ -14,8 +22,9 @@
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  border: none;
   text-decoration: none;
+  // border: 2px;
+  border-color: transparent;
   cursor: pointer;
   font-family: inherit;
   border-radius: 4px;
