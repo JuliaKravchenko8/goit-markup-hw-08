@@ -1,9 +1,9 @@
 .clients__title {
   @include title;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-bottom: 50px;
   }
 }
@@ -12,12 +12,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include mobile {
+    min-width: 450px;
+  }
+  @include tablet {
+    min-width: 738px;
+  }
+  @include desktop {
+    min-width: 1170px;
+  }
 }
 
 .clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   border: 1px solid $iconColor;
   border-radius: 4px;
@@ -25,14 +35,14 @@
   width: 100%;
   height: 92px;
   transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
-  flex-basis: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
+    flex-basis: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 150px) / 6);
   }
 }

@@ -8,18 +8,16 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
 }
 
 .footer__container {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
-    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
   }
 }
 
@@ -29,9 +27,14 @@
   align-items: center;
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+    width: 100%;
   }
-  @media screen and (min-width: 1200px) {
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
     margin-right: 70px;
+    width: 100%;
   }
 }
 
@@ -71,7 +74,14 @@
 
 .footer-soc {
   @media screen and (max-width: 767px) {
+    width: 100%;
     margin-bottom: 60px;
+  }
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 100%;
   }
 }
 

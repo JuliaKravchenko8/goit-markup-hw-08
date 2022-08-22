@@ -1,0 +1,31 @@
+.portfolio-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.portfolio-btn__button {
+  padding: 6px 22px;
+  background: $secondaryBackground;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 4px;
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction, box-shadow 250ms $timingFunction;
+
+  &:hover,
+  :focus {
+    color: $whiteTextColor;
+    background-color: $linkColor;
+    box-shadow: $portfolioBtnShadow;
+  }
+}
