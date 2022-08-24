@@ -27,7 +27,7 @@
           <button
             type="button"
             class="menu-button is-open"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-controls="menu-container"
             data-menu-button
           >
@@ -36,7 +36,11 @@
               <use class="icon-menu" href="./images/icons.svg#menu"></use>
             </svg>
           </button>
-          <div class="menu-container is-open" id="menu-container" data-menu>
+          <div
+            class="menu-container container is-open"
+            id="menu-container"
+            data-menu
+          >
             <ul class="site-nav">
               <li class="site-nav__item">
                 <a class="site-nav__link current" href="./index.html">Студія</a>
@@ -591,8 +595,8 @@
 
         <!-- form -->
 
-        <button class="modal__button" data-modal-close>
-          <svg class="modal__icon" width="11" height="11">
+        <button class="modal__button">
+          <svg class="modal__icon" width="11" height="11" data-modal-close>
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
