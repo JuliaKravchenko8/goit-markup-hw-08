@@ -21,9 +21,12 @@
   height: 796px;
   width: 100%;
 
-  padding: 48px 40px;
+  padding: 48px 20px;
 
   background-color: $primaryBackground;
+  @media screen and (min-width: 480px) {
+    padding: 48px 40px;
+  }
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -176,10 +179,13 @@
 .address-nav__tel {
   @media screen and (max-width: 767px) {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $linkColor;
+    @include mobile {
+      font-size: 34px;
+    }
   }
 }
 
@@ -227,6 +233,7 @@
 
 .soc-nav {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
   @include tablet {
     display: none;
@@ -249,8 +256,11 @@
 
 .soc-nav__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $linkColor;
+  @include mobile {
+    font-size: 18px;
+  }
 }

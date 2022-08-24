@@ -27,18 +27,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // flex-wrap: wrap;
 
   border: 1px solid $iconColor;
   border-radius: 4px;
   color: $iconColor;
-  width: 100%;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
 
-  @include mobile {
-    flex-basis: calc((100% - 30px) / 2);
-  }
   @include tablet {
     flex-basis: calc((100% - 60px) / 3);
   }

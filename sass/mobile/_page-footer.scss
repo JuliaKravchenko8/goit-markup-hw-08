@@ -97,8 +97,10 @@
 
 .footer-soc__list {
   display: flex;
-  justify-content: center;
   gap: 10px;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .footer-soc__link {
