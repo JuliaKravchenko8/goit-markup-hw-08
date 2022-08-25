@@ -58,6 +58,7 @@
 /* ------------------------------------------------------------------ */
 
 .portfolio-descr {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid $borderThumb;
   border-top: none;
@@ -78,4 +79,10 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+.portfolio-card__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
