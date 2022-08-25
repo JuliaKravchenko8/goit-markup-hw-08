@@ -27,7 +27,7 @@
           <button
             type="button"
             class="menu-button is-open"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
           >
@@ -169,8 +169,11 @@
           <ul class="work__list">
             <li class="work__item">
               <img
-                srcset="./images/work1-370.jpg 1x, ./images/work1-740.jpg 2x"
-                src="./images/work1-370.jpg"
+                srcset="
+                  /images/desktop/work1-des-1x.jpg 1x,
+                  /images/desktop/work1-des-2x.jpg 2x
+                "
+                src="/images/desktop/work1-des-1x.jpg"
                 alt="розробка"
                 width="370"
                 height="294"
@@ -179,8 +182,11 @@
             </li>
             <li class="work__item">
               <img
-                srcset="./images/work2-370.jpg 1x, ./images/work2-740.jpg 2x"
-                src="./images/work2-370.jpg"
+                srcset="
+                  /images/desktop/work2-des-1x.jpg 1x,
+                  /images/desktop/work2-des-2x.jpg 2x
+                "
+                src="/images/desktop/work2-des-1x.jpg"
                 alt="адаптація"
                 width="370"
                 height="294"
@@ -189,8 +195,11 @@
             </li>
             <li class="work__item">
               <img
-                srcset="./images/work3-370.jpg 1x, ./images/work3-740.jpg 2x"
-                src="./images/work3-370.jpg"
+                srcset="
+                  /images/desktop/work3-des-1x.jpg 1x,
+                  /images/desktop/work3-des-2x.jpg 2x
+                "
+                src="/images/desktop/work3-des-1x.jpg"
                 alt="дизайн"
                 width="370"
                 height="294"
@@ -207,13 +216,50 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="person">
             <li class="person__item">
-              <img
+              <picture>
+                <source
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 320px) 320px,90vw"
+                  srcset="
+                    /images/mobile/team1-mob-1x.jpg 450w,
+                    /images/mobile/team1-mob-2x.jpg 900w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 354px) 354px, 50vw"
+                  srcset="
+                    /images/tablet/team1-tab-1x.jpg 354w,
+                    /images/tablet/team1-tab-2x.jpg 708w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 25vw"
+                  srcset="
+                    /images/desktop/team1-des-1x.jpg 270w,
+                    /images/desktop/team1-des-2x.jpg 540w
+                  "
+                />
+
+                <img
+                  width="270"
+                  src="/images/desktop/team1-des-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
+              <!-- <img
                 srcset="./images/team1-270.jpg 1x, ./images/team1-540.jpg 2x"
                 src="./images/team1-270.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
-              />
+              /> -->
               <h4 class="person__name">Ігор Дем'яненко</h4>
               <p class="person__description" lang="en">Product Designer</p>
               <ul class="soc">
@@ -248,13 +294,43 @@
               </ul>
             </li>
             <li class="person__item">
-              <img
-                srcset="./images/team2-270.jpg 1x, ./images/team2-540.jpg 2x"
-                src="./images/team2-270.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 320px) 320px,90vw"
+                  srcset="
+                    /images/mobile/team2-mob-1x.jpg 450w,
+                    /images/mobile/team2-mob-2x.jpg 900w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 354px) 354px, 50vw"
+                  srcset="
+                    /images/tablet/team2-tab-1x.jpg 354w,
+                    /images/tablet/team2-tab-2x.jpg 708w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 25vw"
+                  srcset="
+                    /images/desktop/team2-des-1x.jpg 270w,
+                    /images/desktop/team2-des-2x.jpg 540w
+                  "
+                />
+
+                <img
+                  width="270"
+                  src="/images/desktop/team2-des-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <h4 class="person__name">Ольга Рєпіна</h4>
               <p class="person__description" lang="en">Frontend Developer</p>
               <ul class="soc">
@@ -289,13 +365,43 @@
               </ul>
             </li>
             <li class="person__item">
-              <img
-                srcset="./images/team3-270.jpg 1x, ./images/team3-540.jpg 2x"
-                src="./images/team3-270.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 320px) 320px,90vw"
+                  srcset="
+                    /images/mobile/team3-mob-1x.jpg 450w,
+                    /images/mobile/team3-mob-2x.jpg 900w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 354px) 354px, 50vw"
+                  srcset="
+                    /images/tablet/team3-tab-1x.jpg 354w,
+                    /images/tablet/team3-tab-2x.jpg 708w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 25vw"
+                  srcset="
+                    /images/desktop/team3-des-1x.jpg 270w,
+                    /images/desktop/team3-des-2x.jpg 540w
+                  "
+                />
+
+                <img
+                  width="270"
+                  src="/images/desktop/team3-des-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <h4 class="person__name">Микола Тарасов</h4>
               <p class="person__description" lang="en">Marketing</p>
               <ul class="soc">
@@ -330,13 +436,43 @@
               </ul>
             </li>
             <li class="person__item">
-              <img
-                srcset="./images/team4-270.jpg 1x, ./images/team4-540.jpg 2x"
-                src="./images/team4-270.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 320px) 320px, 90vw"
+                  srcset="
+                    /images/mobile/team4-mob-1x.jpg 450w,
+                    /images/mobile/team4-mob-2x.jpg 900w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  sizes="(min-width: 354px) 354px, 50vw"
+                  srcset="
+                    /images/tablet/team4-tab-1x.jpg 354w,
+                    /images/tablet/team4-tab-2x.jpg 708w
+                  "
+                />
+
+                <source
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 270px) 270px, 25vw"
+                  srcset="
+                    /images/desktop/team4-des-1x.jpg 270w,
+                    /images/desktop/team4-des-2x.jpg 540w
+                  "
+                />
+
+                <img
+                  width="270"
+                  src="/images/desktop/team4-des-1x.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <h4 class="person__name">Михайло Єрмаков</h4>
               <p class="person__description" lang="en">UI Designer</p>
               <ul class="soc">
