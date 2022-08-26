@@ -140,9 +140,8 @@
 
 .current {
   &::after {
-    content: "";
-
     @include tablet {
+      content: "";
       display: block;
       position: absolute;
       width: 100%;

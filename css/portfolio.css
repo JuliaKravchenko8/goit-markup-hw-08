@@ -209,11 +209,9 @@ a {
   position: relative;
 }
 
-.current::after {
-  content: "";
-}
 @media screen and (min-width: 768px) {
   .current::after {
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -381,15 +379,6 @@ a {
 
 .mob-site__link:hover, .mob-site__link:focus {
   color: #2196f3;
-}
-
-.current {
-  color: #2196f3;
-  position: relative;
-}
-.current::after {
-  content: "";
-  display: none;
 }
 
 .mob-address {
