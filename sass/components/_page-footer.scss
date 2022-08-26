@@ -8,6 +8,9 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .footer__container {
@@ -34,7 +37,7 @@
   }
   @include desktop {
     margin-right: 70px;
-    width: 100%;
+    // width: 100%;
   }
 }
 
@@ -45,6 +48,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $whiteTextColor;
+  @include desktop {
+    width: 231px;
+  }
 }
 
 .footer-address__link {
@@ -80,7 +86,7 @@
     width: 50%;
   }
   @include desktop {
-    width: 100%;
+    // width: 100%;
   }
 }
 
