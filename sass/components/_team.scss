@@ -1,70 +1,84 @@
-// .team {
-// 	background: $secondaryBackground;
-// }
+.team {
+  background: $secondaryBackground;
+}
 
-// .team__title {
-// @include title;
-// }
+.team__title {
+  @include title;
+}
 
-// .person {
-// 	display: flex;
-// 	gap: 30px;
-// }
+.person {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-// .person__item {
-// 	background-color: $primaryBackground;
-// 	box-shadow: $personShadow;
-// 	border-radius: 0px 0px 4px 4px;
-// }
+.person__item {
+  background-color: $primaryBackground;
+  box-shadow: $personShadow;
+  border-radius: 0px 0px 4px 4px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
 
-// .person__name {
-// 	margin-bottom: 10px;
-// 	padding-top: 30px;
-// 	color: $primaryTextColor;
-// 	font-weight: 500;
-// 	font-size: 16px;
-// 	line-height: 1.19;
-// 	text-align: center;
-// 	letter-spacing: 0.03em;
-// }
+.person__item img {
+  width: 450px;
+}
 
-// .person__description {
-// 	font-family: "Roboto";
-// 	font-style: normal;
-// 	color: $secondaryTextColor;
-// 	font-weight: 400;
-// 	font-size: 16px;
-// 	line-height: 1.19;
-// 	text-align: center;
-// 	letter-spacing: 0.03em;
-// 	margin-bottom: 16px;
-// }
+.person__name {
+  margin-bottom: 10px;
+  padding-top: 30px;
+  color: $primaryTextColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 
-// .soc {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	gap: 10px;
-// 	padding-bottom: 30px;
-// }
+.person__description {
+  font-family: "Roboto";
+  font-style: normal;
+  color: $secondaryTextColor;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
 
-// .soc__link {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	width: 44px;
-// 	height: 44px;
-// 	border: none;
-// 	border-radius: 50%;
-// 	color: $iconColor;
-// 	transition: color 250ms $timingFunction, background-color 250ms $timingFunction;
+.soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
 
-// 	&:hover, &:focus {
-// 		color: $whiteTextColor;
-// 		background-color: $linkColor;}
-	
-// }
+.soc__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  color: $iconColor;
+  transition: color 250ms $timingFunction,
+    background-color 250ms $timingFunction;
 
-// .soc__icon {
-// 	fill: currentColor;
-// }
+  &:hover,
+  &:focus {
+    color: $whiteTextColor;
+    background-color: $linkColor;
+  }
+}
+
+.soc__icon {
+  fill: currentColor;
+}
