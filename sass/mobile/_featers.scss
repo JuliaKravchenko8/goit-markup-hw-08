@@ -4,23 +4,15 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .feature__item {
   margin-bottom: 30px;
 
-  @include mobile {
-    // width: 450px;
-  }
   @include tablet {
-    // width: 354px;
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
-    // width: 270px;
     width: calc((100% - 90px) / 4);
   }
 }
@@ -45,7 +37,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     text-align: left;
   }
 }

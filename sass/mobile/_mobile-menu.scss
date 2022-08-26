@@ -12,18 +12,19 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  transition: background-color 250ms $timingFunction;
+  &:hover, &:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+}
+
+@include tablet {
   .menu-toggle {
     display: none;
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
 .menu-container {
   position: fixed;

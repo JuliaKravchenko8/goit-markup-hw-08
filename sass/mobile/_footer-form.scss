@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  @include mobile {
-  }
   @include tablet {
     margin-top: 60px;
     width: 100%;
@@ -61,7 +59,7 @@
     max-width: 480px;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
   }
 }

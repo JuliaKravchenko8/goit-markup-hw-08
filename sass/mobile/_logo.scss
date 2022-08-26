@@ -13,7 +13,6 @@
   @include tablet {
     margin-right: 88px;
   }
-
   @include desktop {
     margin-right: 93px;
   }
@@ -27,13 +26,13 @@
   margin-bottom: 20px;
   color: $whiteTextColor;
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;

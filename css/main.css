@@ -301,18 +301,18 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -682,6 +682,7 @@ a {
     gap: 30px;
   }
 }
+
 .feature__item {
   margin-bottom: 30px;
 }
@@ -909,6 +910,11 @@ a {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__item:hover, .clients__item:focus {
+  border-color: #2196f3;
+  color: #2196f3;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
@@ -924,11 +930,6 @@ a {
 
 .clients__icon {
   fill: currentColor;
-}
-
-.clients__link:hover, .clients__link:focus {
-  border-color: #2196f3;
-  color: #2196f3;
 }
 
 .backdrop {
@@ -975,7 +976,7 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
 }
-@media screen and (max-widtg: 479px) {
+@media screen and (max-width: 479px) {
   .modal {
     position: absolute;
   }
@@ -1197,8 +1198,8 @@ a {
   border-radius: 2px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox__input:checked ~ .checkbox__icon-check {
   background: #2196f3;
