@@ -6,13 +6,15 @@
 .logo {
   color: $primaryTextColor;
   font-family: "Raleway", sans-serif;
-  margin-right: 88px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  @include tablet {
+    margin-right: 88px;
+  }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 93px;
   }
 }
